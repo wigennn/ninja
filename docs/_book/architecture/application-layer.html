@@ -1,0 +1,784 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>应用层 · DDD领域驱动设计脚手架文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="DDD Scaffold Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="infrastructure-layer.html" />
+    
+    
+    <link rel="prev" href="domain-layer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    架构设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    架构概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="domain-layer.html">
+            
+                <a href="domain-layer.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    领域层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="application-layer.html">
+            
+                <a href="application-layer.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="infrastructure-layer.html">
+            
+                <a href="infrastructure-layer.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    基础设施层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="interfaces-layer.html">
+            
+                <a href="interfaces-layer.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    接口层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../guide/create-new-project.html">
+            
+                <a href="../guide/create-new-project.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    使用模板创建新项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../guide/getting-started.html">
+            
+                <a href="../guide/getting-started.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../guide/development.html">
+            
+                <a href="../guide/development.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../guide/best-practices.html">
+            
+                <a href="../guide/best-practices.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../guide/testing.html">
+            
+                <a href="../guide/testing.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    测试指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    示例代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../examples/user-management.html">
+            
+                <a href="../examples/user-management.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    用户管理示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../examples/domain-model.html">
+            
+                <a href="../examples/domain-model.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    领域模型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../reference/ddd-concepts.html">
+            
+                <a href="../reference/ddd-concepts.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    DDD核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../reference/tech-stack.html">
+            
+                <a href="../reference/tech-stack.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    技术栈说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../reference/faq.html">
+            
+                <a href="../reference/faq.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >应用层</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="应用层设计">应用层设计</h1>
+<p>应用层负责协调领域对象完成业务用例，是连接接口层和领域层的桥梁。</p>
+<h2 id="目录结构">目录结构</h2>
+<pre><code>ddd-application/
+└── src/main/java/com/example/application/
+    ├── dto/              # 数据传输对象
+    │   └── UserDTO.java
+    ├── command/          # 命令对象
+    │   ├── CreateUserCommand.java
+    │   └── UpdateUserCommand.java
+    ├── service/          # 应用服务
+    │   └── UserApplicationService.java
+    └── mapper/           # 对象映射器
+        └── UserMapper.java
+</code></pre><h2 id="核心组件">核心组件</h2>
+<h3 id="应用服务（application-service）">应用服务（Application Service）</h3>
+<p>应用服务编排领域对象完成用例。</p>
+<p><strong>示例：UserApplicationService</strong></p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserApplicationService</span> {
+
+    <span class="hljs-keyword">public</span> UserDTO <span class="hljs-title function_">createUser</span><span class="hljs-params">(CreateUserCommand command)</span> {
+        <span class="hljs-comment">// 1. 领域服务验证</span>
+        <span class="hljs-keyword">if</span> (!userDomainService.canRegister(...)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(...);
+        }
+
+        <span class="hljs-comment">// 2. 创建领域对象</span>
+        <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> User.create(...);
+
+        <span class="hljs-comment">// 3. 保存</span>
+        <span class="hljs-type">User</span> <span class="hljs-variable">savedUser</span> <span class="hljs-operator">=</span> userRepository.save(user);
+
+        <span class="hljs-comment">// 4. 转换为DTO</span>
+        <span class="hljs-keyword">return</span> userMapper.toDTO(savedUser);
+    }
+}
+</code></pre>
+<p><strong>职责</strong>：</p>
+<ul>
+<li>协调领域对象完成用例</li>
+<li>管理事务边界</li>
+<li>处理应用级别的验证</li>
+<li>对象转换（领域对象 ↔ DTO）</li>
+</ul>
+<p><strong>不包含</strong>：</p>
+<ul>
+<li>业务逻辑（应该在领域层）</li>
+<li>技术细节（应该在基础设施层）</li>
+</ul>
+<h3 id="命令（command）">命令（Command）</h3>
+<p>命令对象封装写操作的输入参数。</p>
+<p><strong>示例：CreateUserCommand</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CreateUserCommand</span> {
+    <span class="hljs-meta">@NotBlank</span>
+    <span class="hljs-keyword">private</span> String username;
+
+    <span class="hljs-meta">@NotBlank</span>
+    <span class="hljs-meta">@Email</span>
+    <span class="hljs-keyword">private</span> String email;
+
+    <span class="hljs-meta">@NotBlank</span>
+    <span class="hljs-keyword">private</span> String password;
+}
+</code></pre>
+<p><strong>设计要点</strong>：</p>
+<ul>
+<li>使用验证注解</li>
+<li>只包含必要的字段</li>
+<li>不可变（推荐）</li>
+</ul>
+<h3 id="dto（data-transfer-object）">DTO（Data Transfer Object）</h3>
+<p>DTO用于在不同层之间传输数据。</p>
+<p><strong>示例：UserDTO</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserDTO</span> {
+    <span class="hljs-keyword">private</span> Long id;
+    <span class="hljs-keyword">private</span> String username;
+    <span class="hljs-keyword">private</span> String email;
+    <span class="hljs-keyword">private</span> String status;
+    <span class="hljs-keyword">private</span> LocalDateTime createdAt;
+}
+</code></pre>
+<p><strong>设计要点</strong>：</p>
+<ul>
+<li>只包含数据，不包含行为</li>
+<li>使用MapStruct进行转换</li>
+<li>与领域对象分离</li>
+</ul>
+<h3 id="对象映射器（mapper）">对象映射器（Mapper）</h3>
+<p>使用MapStruct进行对象转换。</p>
+<p><strong>示例：UserMapper</strong></p>
+<pre><code class="lang-java"><span class="hljs-meta">@Mapper</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserMapper</span> {
+    <span class="hljs-type">UserMapper</span> <span class="hljs-variable">INSTANCE</span> <span class="hljs-operator">=</span> Mappers.getMapper(UserMapper.class);
+
+    <span class="hljs-meta">@Mapping(target = "status", expression = "java(user.getStatus().name())")</span>
+    UserDTO <span class="hljs-title function_">toDTO</span><span class="hljs-params">(User user)</span>;
+}
+</code></pre>
+<h2 id="设计模式">设计模式</h2>
+<h3 id="cqrs（命令查询职责分离）">CQRS（命令查询职责分离）</h3>
+<p>虽然本项目未完全实现CQRS，但采用了类似的思路：</p>
+<ul>
+<li><strong>命令（Command）</strong>：写操作</li>
+<li><strong>查询（Query）</strong>：读操作（可以单独定义Query对象）</li>
+</ul>
+<h3 id="事务管理">事务管理</h3>
+<p>应用服务方法使用<code>@Transactional</code>管理事务：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">public</span> UserDTO <span class="hljs-title function_">createUser</span><span class="hljs-params">(CreateUserCommand command)</span> {
+    <span class="hljs-comment">// 事务边界</span>
+}
+</code></pre>
+<p><strong>读操作</strong>使用<code>@Transactional(readOnly = true)</code>：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Transactional(readOnly = true)</span>
+<span class="hljs-keyword">public</span> UserDTO <span class="hljs-title function_">getUserById</span><span class="hljs-params">(Long id)</span> {
+    <span class="hljs-comment">// 只读事务</span>
+}
+</code></pre>
+<h2 id="最佳实践">最佳实践</h2>
+<h3 id="1-保持应用服务薄">1. 保持应用服务薄</h3>
+<p>应用服务应该很薄，只负责协调：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 好的设计</span>
+<span class="hljs-keyword">public</span> UserDTO <span class="hljs-title function_">createUser</span><span class="hljs-params">(CreateUserCommand command)</span> {
+    <span class="hljs-comment">// 验证</span>
+    <span class="hljs-keyword">if</span> (!canRegister(...)) <span class="hljs-keyword">throw</span> ...;
+
+    <span class="hljs-comment">// 创建</span>
+    <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> User.create(...);
+
+    <span class="hljs-comment">// 保存</span>
+    <span class="hljs-keyword">return</span> userMapper.toDTO(userRepository.save(user));
+}
+
+<span class="hljs-comment">// 不好的设计</span>
+<span class="hljs-keyword">public</span> UserDTO <span class="hljs-title function_">createUser</span><span class="hljs-params">(CreateUserCommand command)</span> {
+    <span class="hljs-comment">// 业务逻辑不应该在这里</span>
+    <span class="hljs-keyword">if</span> (command.getPassword().length() &lt; <span class="hljs-number">8</span>) {
+        <span class="hljs-keyword">throw</span> ...; <span class="hljs-comment">// 应该在领域层</span>
+    }
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<h3 id="2-使用领域服务验证">2. 使用领域服务验证</h3>
+<p>复杂的业务验证应该使用领域服务：</p>
+<pre><code class="lang-java"><span class="hljs-keyword">if</span> (!userDomainService.canRegister(username, email)) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"用户名或邮箱已存在"</span>);
+}
+</code></pre>
+<h3 id="3-异常处理">3. 异常处理</h3>
+<p>应用层应该抛出业务异常，由接口层统一处理：</p>
+<pre><code class="lang-java"><span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> userRepository.findById(id)
+    .orElseThrow(() -&gt; <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"用户不存在"</span>));
+</code></pre>
+<h3 id="4-对象转换">4. 对象转换</h3>
+<p>使用MapStruct进行对象转换，避免手动转换：</p>
+<pre><code class="lang-java"><span class="hljs-type">UserDTO</span> <span class="hljs-variable">dto</span> <span class="hljs-operator">=</span> userMapper.toDTO(user);
+</code></pre>
+<h2 id="工作流程">工作流程</h2>
+<p>典型的应用服务工作流程：</p>
+<pre><code>1. 接收命令/查询
+   ↓
+2. 参数验证（使用验证注解）
+   ↓
+3. 业务验证（使用领域服务）
+   ↓
+4. 调用领域对象完成业务逻辑
+   ↓
+5. 保存到仓储
+   ↓
+6. 转换为DTO返回
+</code></pre><h2 id="示例：完整的用例">示例：完整的用例</h2>
+<p>创建用户的完整流程：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">public</span> UserDTO <span class="hljs-title function_">createUser</span><span class="hljs-params">(CreateUserCommand command)</span> {
+    <span class="hljs-comment">// 1. 业务验证</span>
+    <span class="hljs-keyword">if</span> (!userDomainService.canRegister(
+            command.getUsername(), 
+            command.getEmail())) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"用户名或邮箱已存在"</span>);
+    }
+
+    <span class="hljs-comment">// 2. 创建领域对象</span>
+    <span class="hljs-type">User</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> User.create(
+        command.getUsername(),
+        command.getEmail(),
+        command.getPassword()
+    );
+
+    <span class="hljs-comment">// 3. 持久化</span>
+    <span class="hljs-type">User</span> <span class="hljs-variable">savedUser</span> <span class="hljs-operator">=</span> userRepository.save(user);
+
+    <span class="hljs-comment">// 4. 返回DTO</span>
+    <span class="hljs-keyword">return</span> userMapper.toDTO(savedUser);
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="domain-layer.html" class="navigation navigation-prev " aria-label="Previous page: 领域层">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="infrastructure-layer.html" class="navigation navigation-next " aria-label="Next page: 基础设施层">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"应用层","level":"1.2.3","depth":2,"next":{"title":"基础设施层","level":"1.2.4","depth":2,"path":"architecture/infrastructure-layer.md","ref":"architecture/infrastructure-layer.md","articles":[]},"previous":{"title":"领域层","level":"1.2.2","depth":2,"path":"architecture/domain-layer.md","ref":"architecture/domain-layer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","livereload","livereload"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"DDD Scaffold Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DDD领域驱动设计脚手架文档","language":"zh","gitbook":"3.2.3","description":"完整的DDD架构实现指南"},"file":{"path":"architecture/application-layer.md","mtime":"2025-12-01T07:17:23.389Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-12-01T07:32:12.287Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

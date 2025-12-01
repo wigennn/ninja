@@ -1,0 +1,14 @@
+{
+  "name": "ddd-scaffold-docs",
+  "version": "1.0.0",
+  "description": "DDD领域驱动设计脚手架文档",
+  "scripts": {
+    "serve": "honkit serve",
+    "build": "honkit build",
+    "install": "honkit install"
+  },
+  "devDependencies": {
+    "honkit": "^4.0.0"
+  }
+}
+

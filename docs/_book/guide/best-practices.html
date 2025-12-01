@@ -1,0 +1,932 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>最佳实践 · DDD领域驱动设计脚手架文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="DDD Scaffold Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="testing.html" />
+    
+    
+    <link rel="prev" href="development.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    架构设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../architecture/overview.html">
+            
+                <a href="../architecture/overview.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    架构概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../architecture/domain-layer.html">
+            
+                <a href="../architecture/domain-layer.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    领域层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../architecture/application-layer.html">
+            
+                <a href="../architecture/application-layer.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../architecture/infrastructure-layer.html">
+            
+                <a href="../architecture/infrastructure-layer.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    基础设施层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../architecture/interfaces-layer.html">
+            
+                <a href="../architecture/interfaces-layer.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    接口层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="create-new-project.html">
+            
+                <a href="create-new-project.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    使用模板创建新项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="development.html">
+            
+                <a href="development.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="best-practices.html">
+            
+                <a href="best-practices.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    测试指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    示例代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../examples/user-management.html">
+            
+                <a href="../examples/user-management.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    用户管理示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../examples/domain-model.html">
+            
+                <a href="../examples/domain-model.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    领域模型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../reference/ddd-concepts.html">
+            
+                <a href="../reference/ddd-concepts.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    DDD核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../reference/tech-stack.html">
+            
+                <a href="../reference/tech-stack.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    技术栈说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../reference/faq.html">
+            
+                <a href="../reference/faq.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >最佳实践</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="最佳实践">最佳实践</h1>
+<p>本文档总结了DDD项目开发中的最佳实践。</p>
+<h2 id="领域建模">领域建模</h2>
+<h3 id="1-识别聚合">1. 识别聚合</h3>
+<p>聚合是数据修改的单元，应该：</p>
+<ul>
+<li><strong>保持聚合小</strong>：聚合应该尽可能小，只包含真正需要一起修改的实体</li>
+<li><strong>通过ID引用其他聚合</strong>：不要直接引用其他聚合的实体</li>
+<li><strong>一个聚合一个仓储</strong>：只通过聚合根访问聚合</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 好的设计：Order聚合只包含Order和OrderItem</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Order</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">BaseEntity</span> {
+    <span class="hljs-keyword">private</span> List&lt;OrderItem&gt; items; <span class="hljs-comment">// 聚合内的实体</span>
+    <span class="hljs-keyword">private</span> Long customerId;        <span class="hljs-comment">// 通过ID引用Customer聚合</span>
+}
+
+<span class="hljs-comment">// 不好的设计</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Order</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">BaseEntity</span> {
+    <span class="hljs-keyword">private</span> Customer customer; <span class="hljs-comment">// 直接引用其他聚合</span>
+}
+</code></pre>
+<h3 id="2-使用值对象">2. 使用值对象</h3>
+<p>值对象应该：</p>
+<ul>
+<li><strong>不可变</strong>：创建后不能修改</li>
+<li><strong>通过值相等性比较</strong>：两个值对象如果值相同，则相等</li>
+<li><strong>包含验证逻辑</strong>：值对象可以包含自己的验证规则</li>
+</ul>
+<p><strong>示例</strong>：</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Email</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> String value;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Email</span><span class="hljs-params">(String value)</span> {
+        <span class="hljs-keyword">if</span> (value == <span class="hljs-literal">null</span> || !isValidEmail(value)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"无效的邮箱地址"</span>);
+        }
+        <span class="hljs-built_in">this</span>.value = value;
+    }
+
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getValue</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">return</span> value;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">equals</span><span class="hljs-params">(Object o)</span> {
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span> == o) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">if</span> (o == <span class="hljs-literal">null</span> || getClass() != o.getClass()) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        <span class="hljs-type">Email</span> <span class="hljs-variable">email</span> <span class="hljs-operator">=</span> (Email) o;
+        <span class="hljs-keyword">return</span> Objects.equals(value, email.value);
+    }
+}
+</code></pre>
+<h3 id="3-封装业务规则">3. 封装业务规则</h3>
+<p>业务规则应该封装在领域对象中：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 好的设计：业务规则在实体中</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Order</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addItem</span><span class="hljs-params">(OrderItem item)</span> {
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.status != OrderStatus.DRAFT) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalStateException</span>(<span class="hljs-string">"只能向草稿订单添加商品"</span>);
+        }
+        <span class="hljs-built_in">this</span>.items.add(item);
+    }
+}
+
+<span class="hljs-comment">// 不好的设计：业务规则在应用层</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderApplicationService</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addItem</span><span class="hljs-params">(Long orderId, OrderItem item)</span> {
+        <span class="hljs-type">Order</span> <span class="hljs-variable">order</span> <span class="hljs-operator">=</span> repository.findById(orderId);
+        <span class="hljs-keyword">if</span> (order.getStatus() != OrderStatus.DRAFT) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalStateException</span>(<span class="hljs-string">"只能向草稿订单添加商品"</span>);
+        }
+        order.getItems().add(item); <span class="hljs-comment">// 直接操作集合</span>
+    }
+}
+</code></pre>
+<h2 id="应用服务">应用服务</h2>
+<h3 id="1-保持应用服务薄">1. 保持应用服务薄</h3>
+<p>应用服务应该只负责协调，不包含业务逻辑：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 好的设计</span>
+<span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">public</span> OrderDTO <span class="hljs-title function_">createOrder</span><span class="hljs-params">(CreateOrderCommand command)</span> {
+    <span class="hljs-comment">// 1. 验证</span>
+    <span class="hljs-type">Customer</span> <span class="hljs-variable">customer</span> <span class="hljs-operator">=</span> customerRepository.findById(command.getCustomerId())
+        .orElseThrow(() -&gt; <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"客户不存在"</span>));
+
+    <span class="hljs-comment">// 2. 创建领域对象</span>
+    <span class="hljs-type">Order</span> <span class="hljs-variable">order</span> <span class="hljs-operator">=</span> Order.create(customer.getId());
+
+    <span class="hljs-comment">// 3. 添加商品</span>
+    <span class="hljs-keyword">for</span> (OrderItemCommand item : command.getItems()) {
+        <span class="hljs-type">Product</span> <span class="hljs-variable">product</span> <span class="hljs-operator">=</span> productRepository.findById(item.getProductId())
+            .orElseThrow(() -&gt; <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"商品不存在"</span>));
+        order.addItem(OrderItem.create(product.getId(), item.getQuantity()));
+    }
+
+    <span class="hljs-comment">// 4. 保存</span>
+    <span class="hljs-type">Order</span> <span class="hljs-variable">savedOrder</span> <span class="hljs-operator">=</span> orderRepository.save(order);
+
+    <span class="hljs-comment">// 5. 返回DTO</span>
+    <span class="hljs-keyword">return</span> orderMapper.toDTO(savedOrder);
+}
+</code></pre>
+<h3 id="2-使用领域服务处理复杂逻辑">2. 使用领域服务处理复杂逻辑</h3>
+<p>当业务逻辑涉及多个聚合时，使用领域服务：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 领域服务</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderDomainService</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">canPlaceOrder</span><span class="hljs-params">(Customer customer, Order order)</span> {
+        <span class="hljs-comment">// 检查客户信用</span>
+        <span class="hljs-keyword">if</span> (!customer.hasGoodCredit()) {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        }
+
+        <span class="hljs-comment">// 检查库存</span>
+        <span class="hljs-keyword">for</span> (OrderItem item : order.getItems()) {
+            <span class="hljs-keyword">if</span> (!inventoryService.hasStock(item.getProductId(), item.getQuantity())) {
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            }
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+}
+</code></pre>
+<h3 id="3-管理事务边界">3. 管理事务边界</h3>
+<p>事务边界应该在应用服务方法级别：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">public</span> OrderDTO <span class="hljs-title function_">placeOrder</span><span class="hljs-params">(PlaceOrderCommand command)</span> {
+    <span class="hljs-comment">// 整个方法在一个事务中</span>
+    <span class="hljs-type">Order</span> <span class="hljs-variable">order</span> <span class="hljs-operator">=</span> orderRepository.findById(command.getOrderId())
+        .orElseThrow(...);
+
+    <span class="hljs-keyword">if</span> (!orderDomainService.canPlaceOrder(customer, order)) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"无法下单"</span>);
+    }
+
+    order.place();
+    orderRepository.save(order);
+
+    <span class="hljs-comment">// 发布领域事件（如果需要）</span>
+    eventPublisher.publish(<span class="hljs-keyword">new</span> <span class="hljs-title class_">OrderPlacedEvent</span>(order.getId()));
+
+    <span class="hljs-keyword">return</span> orderMapper.toDTO(order);
+}
+</code></pre>
+<h2 id="仓储模式">仓储模式</h2>
+<h3 id="1-仓储接口在领域层">1. 仓储接口在领域层</h3>
+<p>仓储接口定义在领域层，使用领域对象：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 领域层</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">OrderRepository</span> {
+    Order <span class="hljs-title function_">save</span><span class="hljs-params">(Order order)</span>;
+    Optional&lt;Order&gt; <span class="hljs-title function_">findById</span><span class="hljs-params">(Long id)</span>;
+    List&lt;Order&gt; <span class="hljs-title function_">findByCustomerId</span><span class="hljs-params">(Long customerId)</span>;
+}
+</code></pre>
+<h3 id="2-仓储实现在基础设施层">2. 仓储实现在基础设施层</h3>
+<p>仓储实现在基础设施层，处理持久化细节：</p>
+<pre><code class="lang-java"><span class="hljs-comment">// 基础设施层</span>
+<span class="hljs-meta">@Repository</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderRepositoryImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">OrderRepository</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> OrderJpaRepository jpaRepository;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> OrderEntityMapper mapper;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> Order <span class="hljs-title function_">save</span><span class="hljs-params">(Order order)</span> {
+        <span class="hljs-type">OrderEntity</span> <span class="hljs-variable">entity</span> <span class="hljs-operator">=</span> mapper.toEntity(order);
+        <span class="hljs-type">OrderEntity</span> <span class="hljs-variable">savedEntity</span> <span class="hljs-operator">=</span> jpaRepository.save(entity);
+        <span class="hljs-keyword">return</span> mapper.toDomain(savedEntity);
+    }
+}
+</code></pre>
+<h3 id="3-使用规范模式（specification-pattern）">3. 使用规范模式（Specification Pattern）</h3>
+<p>复杂查询可以使用规范模式：</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">OrderSpecification</span> {
+    <span class="hljs-type">boolean</span> <span class="hljs-title function_">isSatisfiedBy</span><span class="hljs-params">(Order order)</span>;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HighValueOrderSpecification</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">OrderSpecification</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> BigDecimal threshold;
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">isSatisfiedBy</span><span class="hljs-params">(Order order)</span> {
+        <span class="hljs-keyword">return</span> order.getTotalAmount().compareTo(threshold) &gt; <span class="hljs-number">0</span>;
+    }
+}
+</code></pre>
+<h2 id="异常处理">异常处理</h2>
+<h3 id="1-使用领域异常">1. 使用领域异常</h3>
+<p>定义领域特定的异常：</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderNotFoundException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">DomainException</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">OrderNotFoundException</span><span class="hljs-params">(Long orderId)</span> {
+        <span class="hljs-built_in">super</span>(<span class="hljs-string">"订单不存在: "</span> + orderId);
+    }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InsufficientStockException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">DomainException</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">InsufficientStockException</span><span class="hljs-params">(Long productId, <span class="hljs-type">int</span> requested, <span class="hljs-type">int</span> available)</span> {
+        <span class="hljs-built_in">super</span>(String.format(<span class="hljs-string">"商品库存不足: 商品ID=%d, 请求数量=%d, 可用数量=%d"</span>, 
+            productId, requested, available));
+    }
+}
+</code></pre>
+<h3 id="2-统一异常处理">2. 统一异常处理</h3>
+<p>在接口层统一处理异常：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestControllerAdvice</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">GlobalExceptionHandler</span> {
+
+    <span class="hljs-meta">@ExceptionHandler(OrderNotFoundException.class)</span>
+    <span class="hljs-keyword">public</span> ResponseEntity&lt;ErrorResponse&gt; <span class="hljs-title function_">handleOrderNotFound</span><span class="hljs-params">(
+            OrderNotFoundException e)</span> {
+        <span class="hljs-keyword">return</span> ResponseEntity.status(HttpStatus.NOT_FOUND)
+            .body(ErrorResponse.of(e.getMessage()));
+    }
+
+    <span class="hljs-meta">@ExceptionHandler(InsufficientStockException.class)</span>
+    <span class="hljs-keyword">public</span> ResponseEntity&lt;ErrorResponse&gt; <span class="hljs-title function_">handleInsufficientStock</span><span class="hljs-params">(
+            InsufficientStockException e)</span> {
+        <span class="hljs-keyword">return</span> ResponseEntity.status(HttpStatus.BAD_REQUEST)
+            .body(ErrorResponse.of(e.getMessage()));
+    }
+}
+</code></pre>
+<h2 id="性能优化">性能优化</h2>
+<h3 id="1-使用延迟加载">1. 使用延迟加载</h3>
+<p>对于关联实体，使用延迟加载：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Entity</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderEntity</span> {
+    <span class="hljs-meta">@OneToMany(fetch = FetchType.LAZY)</span>
+    <span class="hljs-keyword">private</span> List&lt;OrderItemEntity&gt; items;
+}
+</code></pre>
+<h3 id="2-使用dto投影">2. 使用DTO投影</h3>
+<p>查询时只选择需要的字段：</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">OrderSummary</span> {
+    Long <span class="hljs-title function_">getId</span><span class="hljs-params">()</span>;
+    BigDecimal <span class="hljs-title function_">getTotalAmount</span><span class="hljs-params">()</span>;
+    OrderStatus <span class="hljs-title function_">getStatus</span><span class="hljs-params">()</span>;
+}
+
+<span class="hljs-meta">@Query("SELECT o.id as id, o.totalAmount as totalAmount, o.status as status " +
+       "FROM OrderEntity o WHERE o.customerId = :customerId")</span>
+List&lt;OrderSummary&gt; <span class="hljs-title function_">findOrderSummariesByCustomerId</span><span class="hljs-params">(Long customerId)</span>;
+</code></pre>
+<h3 id="3-批量操作">3. 批量操作</h3>
+<p>对于批量操作，使用批量更新：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Modifying</span>
+<span class="hljs-meta">@Query("UPDATE OrderEntity o SET o.status = :status WHERE o.id IN :ids")</span>
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">updateStatusByIds</span><span class="hljs-params">(<span class="hljs-meta">@Param("ids")</span> List&lt;Long&gt; ids, <span class="hljs-meta">@Param("status")</span> OrderStatus status)</span>;
+</code></pre>
+<h2 id="测试">测试</h2>
+<h3 id="1-领域层测试">1. 领域层测试</h3>
+<p>领域层测试应该快速、独立：</p>
+<pre><code class="lang-java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderTest</span> {
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldAddItemToDraftOrder</span><span class="hljs-params">()</span> {
+        <span class="hljs-comment">// Given</span>
+        <span class="hljs-type">Order</span> <span class="hljs-variable">order</span> <span class="hljs-operator">=</span> Order.create(customerId);
+
+        <span class="hljs-comment">// When</span>
+        order.addItem(OrderItem.create(productId, quantity));
+
+        <span class="hljs-comment">// Then</span>
+        assertThat(order.getItems()).hasSize(<span class="hljs-number">1</span>);
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldNotAddItemToPlacedOrder</span><span class="hljs-params">()</span> {
+        <span class="hljs-comment">// Given</span>
+        <span class="hljs-type">Order</span> <span class="hljs-variable">order</span> <span class="hljs-operator">=</span> Order.create(customerId);
+        order.place();
+
+        <span class="hljs-comment">// When &amp; Then</span>
+        assertThatThrownBy(() -&gt; order.addItem(OrderItem.create(productId, quantity)))
+            .isInstanceOf(IllegalStateException.class)
+            .hasMessage(<span class="hljs-string">"只能向草稿订单添加商品"</span>);
+    }
+}
+</code></pre>
+<h3 id="2-应用服务测试">2. 应用服务测试</h3>
+<p>使用Mock测试应用服务：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderApplicationServiceTest</span> {
+
+    <span class="hljs-meta">@Mock</span>
+    <span class="hljs-keyword">private</span> OrderRepository orderRepository;
+
+    <span class="hljs-meta">@Mock</span>
+    <span class="hljs-keyword">private</span> OrderDomainService orderDomainService;
+
+    <span class="hljs-meta">@InjectMocks</span>
+    <span class="hljs-keyword">private</span> OrderApplicationService orderApplicationService;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldCreateOrder</span><span class="hljs-params">()</span> {
+        <span class="hljs-comment">// Given</span>
+        <span class="hljs-type">CreateOrderCommand</span> <span class="hljs-variable">command</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">CreateOrderCommand</span>(...);
+        <span class="hljs-keyword">when</span>(orderDomainService.canCreateOrder(any())).thenReturn(<span class="hljs-literal">true</span>);
+
+        <span class="hljs-comment">// When</span>
+        <span class="hljs-type">OrderDTO</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> orderApplicationService.createOrder(command);
+
+        <span class="hljs-comment">// Then</span>
+        assertThat(result).isNotNull();
+        verify(orderRepository).save(any(Order.class));
+    }
+}
+</code></pre>
+<h3 id="3-集成测试">3. 集成测试</h3>
+<p>关键流程应该有集成测试：</p>
+<pre><code class="lang-java"><span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-meta">@AutoConfigureMockMvc</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderControllerIntegrationTest</span> {
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> MockMvc mockMvc;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldCreateOrder</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+        mockMvc.perform(post(<span class="hljs-string">"/api/orders"</span>)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(<span class="hljs-string">"{\"customerId\":1,\"items\":[...]}"</span>))
+            .andExpect(status().isCreated())
+            .andExpect(jsonPath(<span class="hljs-string">"$.id"</span>).exists());
+    }
+}
+</code></pre>
+<h2 id="代码质量">代码质量</h2>
+<h3 id="1-使用静态分析工具">1. 使用静态分析工具</h3>
+<ul>
+<li>SonarQube：代码质量分析</li>
+<li>Checkstyle：代码风格检查</li>
+<li>SpotBugs：Bug检测</li>
+</ul>
+<h3 id="2-代码审查">2. 代码审查</h3>
+<ul>
+<li>每个PR都应该有代码审查</li>
+<li>关注架构一致性</li>
+<li>检查是否遵循DDD原则</li>
+</ul>
+<h3 id="3-持续重构">3. 持续重构</h3>
+<ul>
+<li>定期重构代码</li>
+<li>保持代码简洁</li>
+<li>移除重复代码</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="development.html" class="navigation navigation-prev " aria-label="Previous page: 开发规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="testing.html" class="navigation navigation-next " aria-label="Next page: 测试指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"最佳实践","level":"1.3.4","depth":2,"next":{"title":"测试指南","level":"1.3.5","depth":2,"path":"guide/testing.md","ref":"guide/testing.md","articles":[]},"previous":{"title":"开发规范","level":"1.3.3","depth":2,"path":"guide/development.md","ref":"guide/development.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-default","livereload","livereload"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"DDD Scaffold Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DDD领域驱动设计脚手架文档","language":"zh","gitbook":"3.2.3","description":"完整的DDD架构实现指南"},"file":{"path":"guide/best-practices.md","mtime":"2025-12-01T07:17:23.389Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-12-01T07:32:12.287Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

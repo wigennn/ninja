@@ -1,0 +1,22 @@
+{
+  "title": "DDD领域驱动设计脚手架文档",
+  "description": "完整的DDD架构实现指南",
+  "author": "DDD Scaffold Team",
+  "language": "zh",
+  "gitbook": "3.2.3",
+  "root": "./",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "livereload"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  }
+}
+

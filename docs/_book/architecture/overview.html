@@ -1,0 +1,692 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>架构概览 · DDD领域驱动设计脚手架文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        <meta name="author" content="DDD Scaffold Team">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="domain-layer.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    架构设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    架构概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="domain-layer.html">
+            
+                <a href="domain-layer.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    领域层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="application-layer.html">
+            
+                <a href="application-layer.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="infrastructure-layer.html">
+            
+                <a href="infrastructure-layer.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    基础设施层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="interfaces-layer.html">
+            
+                <a href="interfaces-layer.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    接口层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../guide/create-new-project.html">
+            
+                <a href="../guide/create-new-project.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    使用模板创建新项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../guide/getting-started.html">
+            
+                <a href="../guide/getting-started.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../guide/development.html">
+            
+                <a href="../guide/development.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../guide/best-practices.html">
+            
+                <a href="../guide/best-practices.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../guide/testing.html">
+            
+                <a href="../guide/testing.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    测试指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    示例代码
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../examples/user-management.html">
+            
+                <a href="../examples/user-management.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    用户管理示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../examples/domain-model.html">
+            
+                <a href="../examples/domain-model.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    领域模型设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    参考
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../reference/ddd-concepts.html">
+            
+                <a href="../reference/ddd-concepts.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    DDD核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../reference/tech-stack.html">
+            
+                <a href="../reference/tech-stack.html">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    技术栈说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../reference/faq.html">
+            
+                <a href="../reference/faq.html">
+            
+                    
+                        <b>1.5.3.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >架构概览</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="架构概览">架构概览</h1>
+<h2 id="分层架构">分层架构</h2>
+<p>本项目采用经典的四层DDD架构，每层职责清晰，依赖关系明确。</p>
+<pre><code>┌─────────────────────────────────────┐
+│         Interfaces Layer            │  ← 接口层（REST API、DTO）
+├─────────────────────────────────────┤
+│       Application Layer             │  ← 应用层（应用服务、用例编排）
+├─────────────────────────────────────┤
+│         Domain Layer                │  ← 领域层（实体、值对象、领域服务）
+├─────────────────────────────────────┤
+│      Infrastructure Layer           │  ← 基础设施层（持久化、外部服务）
+└─────────────────────────────────────┘
+</code></pre><h2 id="依赖关系">依赖关系</h2>
+<ul>
+<li><strong>接口层</strong> → 应用层</li>
+<li><strong>应用层</strong> → 领域层</li>
+<li><strong>基础设施层</strong> → 领域层 + 应用层</li>
+<li><strong>领域层</strong> → 无依赖（核心层）</li>
+</ul>
+<h2 id="各层职责">各层职责</h2>
+<h3 id="领域层（domain-layer）">领域层（Domain Layer）</h3>
+<p>领域层是系统的核心，包含：</p>
+<ul>
+<li><strong>实体（Entity）</strong>：具有唯一标识的对象</li>
+<li><strong>值对象（Value Object）</strong>：通过值相等性比较的对象</li>
+<li><strong>领域服务（Domain Service）</strong>：跨实体的业务逻辑</li>
+<li><strong>仓储接口（Repository Interface）</strong>：数据访问抽象</li>
+</ul>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>不依赖任何外部框架</li>
+<li>包含核心业务逻辑</li>
+<li>定义仓储接口，不包含实现</li>
+</ul>
+<h3 id="应用层（application-layer）">应用层（Application Layer）</h3>
+<p>应用层协调领域对象完成用例：</p>
+<ul>
+<li><strong>应用服务（Application Service）</strong>：编排领域对象完成业务用例</li>
+<li><strong>DTO（Data Transfer Object）</strong>：数据传输对象</li>
+<li><strong>命令（Command）</strong>：写操作命令</li>
+<li><strong>查询（Query）</strong>：读操作查询</li>
+</ul>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>薄层，不包含业务逻辑</li>
+<li>负责事务管理</li>
+<li>协调领域对象和基础设施</li>
+</ul>
+<h3 id="基础设施层（infrastructure-layer）">基础设施层（Infrastructure Layer）</h3>
+<p>基础设施层提供技术实现：</p>
+<ul>
+<li><strong>仓储实现（Repository Implementation）</strong>：实现领域层的仓储接口</li>
+<li><strong>持久化实体（Persistence Entity）</strong>：JPA实体</li>
+<li><strong>外部服务适配器（External Service Adapter）</strong>：第三方服务集成</li>
+<li><strong>配置（Configuration）</strong>：技术配置</li>
+</ul>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>实现技术细节</li>
+<li>可替换的实现</li>
+<li>依赖外部框架</li>
+</ul>
+<h3 id="接口层（interfaces-layer）">接口层（Interfaces Layer）</h3>
+<p>接口层提供外部访问入口：</p>
+<ul>
+<li><strong>REST控制器（REST Controller）</strong>：HTTP API端点</li>
+<li><strong>请求/响应DTO</strong>：API数据传输对象</li>
+<li><strong>异常处理（Exception Handler）</strong>：统一异常处理</li>
+<li><strong>参数验证（Validation）</strong>：输入验证</li>
+</ul>
+<p><strong>特点</strong>：</p>
+<ul>
+<li>处理HTTP请求</li>
+<li>参数验证和转换</li>
+<li>统一异常处理</li>
+</ul>
+<h2 id="数据流向">数据流向</h2>
+<pre><code>HTTP Request
+    ↓
+Interfaces Layer (Controller)
+    ↓
+Application Layer (Application Service)
+    ↓
+Domain Layer (Entity/Domain Service)
+    ↓
+Infrastructure Layer (Repository Implementation)
+    ↓
+Database
+</code></pre><h2 id="设计原则">设计原则</h2>
+<ol>
+<li><strong>依赖倒置</strong>：高层模块不依赖低层模块，都依赖抽象</li>
+<li><strong>单一职责</strong>：每层、每个类职责单一</li>
+<li><strong>开闭原则</strong>：对扩展开放，对修改关闭</li>
+<li><strong>领域驱动</strong>：以领域模型为核心，技术为领域服务</li>
+</ol>
+<h2 id="模块划分">模块划分</h2>
+<p>项目采用Maven多模块结构：</p>
+<ul>
+<li><code>ddd-domain</code>：领域层模块</li>
+<li><code>ddd-application</code>：应用层模块</li>
+<li><code>ddd-infrastructure</code>：基础设施层模块</li>
+<li><code>ddd-interfaces</code>：接口层模块</li>
+<li><code>ddd-bootstrap</code>：启动模块（包含Spring Boot配置）</li>
+</ul>
+<h2 id="优势">优势</h2>
+<ol>
+<li><strong>清晰的边界</strong>：每层职责明确，易于理解</li>
+<li><strong>易于测试</strong>：领域层可独立测试</li>
+<li><strong>易于维护</strong>：修改技术实现不影响领域层</li>
+<li><strong>易于扩展</strong>：新功能按层添加，结构清晰</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="domain-layer.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 领域层">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"架构概览","level":"1.2.1","depth":2,"next":{"title":"领域层","level":"1.2.2","depth":2,"path":"architecture/domain-layer.md","ref":"architecture/domain-layer.md","articles":[]},"previous":{"title":"架构设计","level":"1.2","depth":1,"ref":"","articles":[{"title":"架构概览","level":"1.2.1","depth":2,"path":"architecture/overview.md","ref":"architecture/overview.md","articles":[]},{"title":"领域层","level":"1.2.2","depth":2,"path":"architecture/domain-layer.md","ref":"architecture/domain-layer.md","articles":[]},{"title":"应用层","level":"1.2.3","depth":2,"path":"architecture/application-layer.md","ref":"architecture/application-layer.md","articles":[]},{"title":"基础设施层","level":"1.2.4","depth":2,"path":"architecture/infrastructure-layer.md","ref":"architecture/infrastructure-layer.md","articles":[]},{"title":"接口层","level":"1.2.5","depth":2,"path":"architecture/interfaces-layer.md","ref":"architecture/interfaces-layer.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-default","livereload","livereload"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"DDD Scaffold Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DDD领域驱动设计脚手架文档","language":"zh","gitbook":"3.2.3","description":"完整的DDD架构实现指南"},"file":{"path":"architecture/overview.md","mtime":"2025-12-01T07:17:23.389Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-12-01T07:32:12.287Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
